@@ -18,4 +18,14 @@ For the Django backend to work correctly, you'll need to install the following p
 -django-cors-headers: To handle Cross-Origin Resource Sharing (CORS) and allow communication between frontend and backend.
 
 
-![image](https://github.com/user-attachments/assets/51574ef4-77b5-44e4-8d6c-3c1a67087f53)
+![Ekran Görüntüsü (2446)](https://github.com/user-attachments/assets/21557aa6-d405-4c36-9484-ddba6417331d)
+
+![Ekran Görüntüsü (2447)](https://github.com/user-attachments/assets/a27c6b11-e981-4ffe-b742-07e8f032409c)
+
+![Ekran Görüntüsü (2448)](https://github.com/user-attachments/assets/077fda0d-06db-4138-81c2-828a1a71190d)
+
+
+
+Notes :
+-The student list is initially empty.
+-Students will appear in the list as they are added through the system.
