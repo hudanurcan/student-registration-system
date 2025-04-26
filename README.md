@@ -10,11 +10,17 @@ Technologies Used:
 -SqLite
 
 
+
+
+
 Key Features:
 
 -Add, update, and delete student records.
 
 -List student records.
+
+
+
 
 
 For the Django backend to work correctly, you'll need to install the following packages:
