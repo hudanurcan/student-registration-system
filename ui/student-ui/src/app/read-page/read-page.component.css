@@ -1,0 +1,144 @@
+
+.container {
+
+    width: auto;
+    height: auto;
+    margin-left: 210px;
+    margin-right: 10px;
+    margin-top: 40px;
+    
+
+    font-family: 'Arial', sans-serif;
+ }
+
+.student-table {
+ 
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  z-index: 1; 
+  
+}
+
+.student-table th, .student-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+  
+}
+
+.student-table th {
+  background-color: #b97188;
+  color: white;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.student-table tr:hover {
+  background-color: #f9f9f9;
+}
+
+.btn {
+  padding: 8px 12px;
+  font-size: 14px;
+  border-radius: 15px;
+  cursor: pointer;
+  border: none;
+  background-color: #ffd2d4;
+
+}
+
+.btn:hover {
+  background-color: #ffb0b4;
+}
+
+.modal-dialog {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed; 
+  left: 0;
+  width: 100vw; 
+  height: 100vh; 
+  z-index: 9999; 
+}
+
+.modal-content {
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  border: 1px solid #ddd;
+  max-width: 600px;
+  background-color: white;
+  width: 100%;
+  z-index: 10000; 
+}
+
+.modal-header {
+  border-bottom: none;
+}
+
+.modal-title {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.modal-body {
+  padding-top: 10px;
+}
+
+.close {
+  font-size: 24px;
+  color: #333;
+}
+
+.close:hover {
+  color: #000;
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  z-index: 9998; 
+}
+
+.search-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .search-container input {
+    padding: 10px 10px 10px 50px; 
+    border: 1px solid #ddd; 
+    background-color: #e2e2e2;
+    border-radius: 15px;
+    width: 950px;
+    margin-right: 10px;
+    font-size: 16px; 
+  }
+  
+  .search-container i {
+    position: absolute;
+    left: 15px; 
+    top: 50%; 
+    transform: translateY(-50%); 
+    color: #727272;
+    font-size: 18px; 
+  }
+  
+  .search-container input::placeholder {
+    color: #4d4d4d; 
+  }
+.header h2 {
+
+    justify-content: space-between;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: bold;
+    color: #615a7f;
+}

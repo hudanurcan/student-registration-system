@@ -1,0 +1,80 @@
+ <div class="container">
+    <form (ngSubmit)="updateStudent()" class="box">
+      <div class="form-group">
+        <label for="name">Ad:</label>
+        <input id="name" [(ngModel)]="stu.name" name="name" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="surname">Soyad:</label>
+        <input id="surname" [(ngModel)]="stu.surname" name="surname" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="number">Öğrenci Numarası:</label>
+        <input id="number" [(ngModel)]="stu.number" name="number" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="tcNo">T.C. Kimlik No:</label>
+        <input id="tcNo" [(ngModel)]="stu.tc" name="tc" readonly>
+      </div>
+
+      <div class="form-group">
+        <label for="mail">Email:</label>
+        <input id="mail" [(ngModel)]="stu.mail" name="mail" required>
+      </div>      
+      
+      <div class="form-group">
+        <label for="phone">Telefon No:</label>
+        <input id="phone" [(ngModel)]="stu.phone" name="phone" required>
+      </div>
+
+      <div class="form-group">
+        <label for="birthDate">Doğum Tarihi:</label>
+        <input id="birthDate" [(ngModel)]="stu.birthDate" name="birthDate" readonly>
+      </div>
+
+      <div class="form-group">
+        <label for="address">Adres:</label>
+        <input id="address" [(ngModel)]="stu.address" name="address" required>
+      </div>
+
+
+
+      <div class="form-group">
+        <label for="school">Okul:</label>
+        <input id="school" [(ngModel)]="stu.school" name="school" required>
+      </div>
+
+      
+      <div class="form-group">
+        <label for="department">Bölüm:</label>
+        <input type="text" id="department" [(ngModel)]="stu.department" name="department" placeholder="Öğrencinin bölümünü seçiniz" list="departments" required
+        />
+        <datalist id="departments">
+          <option *ngFor="let department of departments" [value]="department">
+            {{ department }}
+          </option>
+        </datalist>
+      </div>
+
+      
+      <div class="form-group">
+        <label for="stu_class">Sınıf:</label>
+        <input id="stu_class" [(ngModel)]="stu.stu_class" name="stu_class" required>
+      </div>
+
+      
+      <div class="form-group">
+        <label for="graduate_year">Mezuniyet Tarihi:</label>
+        <input id="graduate_year" [(ngModel)]="stu.graduate_year" name="graduate_year" required>
+      </div>
+
+      
+  
+  
+      <button type="submit" class="submit-btn">Güncelle</button>
+    </form>
+  </div>
+  

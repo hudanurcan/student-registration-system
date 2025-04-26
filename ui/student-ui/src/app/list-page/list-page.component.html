@@ -1,0 +1,57 @@
+      <div class="container">
+
+        <div class="header">
+            <h2 class="head">Öğrenci Listesi</h2>
+            <div class="search-container">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              <input type="text" [(ngModel)]="searchTerm" placeholder="İsim veya Soyisim ile Ara" />
+              
+            </div>
+          </div>
+
+        <table class="student-table" style="margin-right: 10px;">
+          <thead>
+            <tr>
+              <th>Öğrenci Numarası</th>
+              <th>Ad</th>
+              <th>Soyad</th> 
+              <th>TC</th>
+              <th>E-posta</th>
+              <th>Telefon</th>
+              <th>Doğum Tarihi</th>
+              <th>Adres</th>
+              <th>Okul</th>
+              <th>Bölüm</th>
+              <th>Sınıf</th>
+              <th>Mezuniyet Yılı</th> 
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let dataItem of StudentList | filter: searchTerm | paginate: { itemsPerPage: itemsPerPage, currentPage: p }" >
+              <td>{{ dataItem.number }}</td>
+              <td>{{ dataItem.name }}</td>
+              <td>{{ dataItem.surname }}</td> 
+              <td >{{ dataItem.tc }}</td>
+              <td class="truncate" matTooltip="{{ dataItem.mail }}">{{ dataItem.mail }}</td>
+              <td >{{ dataItem.phone }}</td>
+              <td>{{ dataItem.birthDate}}</td>
+              <td class="truncate" matTooltip="{{ dataItem.address }}">{{ dataItem.address }}</td>
+              <td >{{ dataItem.school }}</td>
+              <td class="truncate" matTooltip="{{ dataItem.department }}">{{ dataItem.department }}</td>
+              <td>{{ dataItem.stu_class }}</td>
+              <td>{{ dataItem.graduate_year }}</td>
+         
+     
+            </tr>
+           
+          </tbody>
+
+
+
+        </table>
+
+        <div >
+            <pagination-controls (pageChange)="p = $event" ></pagination-controls>
+          </div>
+
+      </div>  

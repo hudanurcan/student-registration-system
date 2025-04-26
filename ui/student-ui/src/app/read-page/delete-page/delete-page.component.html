@@ -1,0 +1,18 @@
+
+<div class="container">
+
+    <button type="button" (click)="cancel()" class="close">
+      <span>&times;</span> <!-- x işaretini koyar-->
+    </button>
+  
+    <div>
+      <p>{{ studentToDelete?.name }} {{ studentToDelete?.surname }} isimli öğrenciyi silmek istediğinizden emin misiniz?</p>
+    </div>
+  
+    <div>
+      <button type="button" class="btn" (click)="cancel()">İptal</button>
+      <button type="button" class="btn" (click)="deleteStudent()">Sil</button>
+    </div>
+  
+  </div>
+  

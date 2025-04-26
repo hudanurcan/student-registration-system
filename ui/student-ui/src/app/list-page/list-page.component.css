@@ -1,0 +1,137 @@
+.container {
+    width: auto;
+    height: auto;
+    margin-left: 210px;
+    margin-top: 40px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: default;
+
+  }
+  
+  thead {
+    background-color: #f4f4f4;
+  }
+  
+  thead th {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 2px solid #ddd;
+    color: #333;
+
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  tbody tr:hover {
+    background-color: #e2e2e2;
+  }
+  
+  tbody td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    height: 50px;
+    width: 70px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    position: relative;
+  }
+  
+  
+  .head {
+    font-size: 30px;
+    text-align: left;
+    margin-left: 10px;
+    color: #615a7f;
+    font-weight: bold;
+    font-style: italic;
+    margin-top: 15px;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .search-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .search-container input {
+    padding: 10px 10px 10px 50px;
+    border: 1px solid #ddd;
+    background-color: #e2e2e2;
+    border-radius: 15px;
+    width: 950px;
+    margin-right: 10px;
+    font-size: 16px;
+  }
+  
+  .search-container i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #727272;
+    font-size: 18px;
+  }
+  
+  .search-container input::placeholder {
+    color: #4d4d4d;
+  }
+  
+  .truncate {
+    display: inline-block;
+    width: 100px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: default;
+    position: relative;
+  }
+  
+  .truncate::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background: #c51010;
+    color: #fff;
+    padding: 5px;
+    border-radius: 3px;
+    white-space: nowrap;
+    font-size: 12px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+    z-index: 10;
+    transform: translateY(5px);
+  }
+  
+  .truncate:hover::after {
+    opacity: 1;
+    visibility: visible;
+  }
+  
