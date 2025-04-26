@@ -16,3 +16,6 @@ For the Django backend to work correctly, you'll need to install the following p
 -Django: The web framework for the backend.
 -djangorestframework: For building RESTful APIs.
 -django-cors-headers: To handle Cross-Origin Resource Sharing (CORS) and allow communication between frontend and backend.
+
+
+![image](https://github.com/user-attachments/assets/51574ef4-77b5-44e4-8d6c-3c1a67087f53)
