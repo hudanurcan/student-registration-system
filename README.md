@@ -13,6 +13,6 @@ Key Features:
 
 
 For the Django backend to work correctly, you'll need to install the following packages:
-Django: The web framework for the backend.
-djangorestframework: For building RESTful APIs.
-django-cors-headers: To handle Cross-Origin Resource Sharing (CORS) and allow communication between frontend and backend.
+-Django: The web framework for the backend.
+-djangorestframework: For building RESTful APIs.
+-django-cors-headers: To handle Cross-Origin Resource Sharing (CORS) and allow communication between frontend and backend.
