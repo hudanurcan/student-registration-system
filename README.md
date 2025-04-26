@@ -27,5 +27,7 @@ For the Django backend to work correctly, you'll need to install the following p
 
 
 Notes :
+
 -The student list is initially empty.
+
 -Students will appear in the list as they are added through the system.
